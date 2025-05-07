@@ -1,4 +1,4 @@
-QUESTION ONE -- 1NF: Split multiple products into individual rows
+-- QUESTION ONE -- 1NF: Split multiple products into individual rows
 -- Create normalized ProductDetail_1NF table
 CREATE TABLE ProductDetail_1NF (
     OrderID INT,
@@ -13,7 +13,8 @@ VALUES (101, 'John Doe', 'Laptop'),
     (102, 'Jane Smith', 'Keyboard'),
     (102, 'Jane Smith', 'Mouse'),
     (103, 'Emily Clark', 'Phone');
-QUESTION 2 -- 2NF: Eliminate partial dependencies by creating two tables
+
+-- QUESTION 2 -- 2NF: Eliminate partial dependencies by creating two tables
 -- Table 1: Orders (OrderID, CustomerName)
 CREATE TABLE Orders (
     OrderID INT PRIMARY KEY,
@@ -39,4 +40,3 @@ VALUES (101, 'Laptop', 2),
     (102, 'Keyboard', 1),
     (102, 'Mouse', 2),
     (103, 'Phone', 1);
-QUESTION 3
